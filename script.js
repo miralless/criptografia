@@ -87,7 +87,7 @@ function encriptar() {
   const p = +document.getElementById("p").value;
   const q = +document.getElementById("q").value;
 
-  if (!texto) {
+  if (!texto || texto.trim() === "") {
     alert("El texto a encriptar no puede estar vacío.");
     return;
   }
