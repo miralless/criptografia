@@ -136,7 +136,11 @@ function desencriptar() {
 
 function copyToClipboard() { 
   const texto = document.getElementById('resultado').value;
-  if (!texto) return; // no hay nada que copiar
+  if (!texto) {
+    alert('No hay nada que copiar.');
+    return;
+  }// no hay nada que copiar
+    
 
   navigator.clipboard.writeText(texto)
   .then(() => {
