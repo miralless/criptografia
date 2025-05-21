@@ -87,6 +87,11 @@ function encriptar() {
   const p = +document.getElementById("p").value;
   const q = +document.getElementById("q").value;
 
+  if (!texto) {
+    alert("El texto a encriptar no puede estar vacío.");
+    return;
+  }
+
   // Validar que p y q sean primos
   if (!isPrime(p) || !isPrime(q)) {
     alert("Ambos p y q deben ser números primos.");
