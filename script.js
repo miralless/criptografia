@@ -89,17 +89,17 @@ function encriptar() {
 
   // Validar que p y q sean primos
   if (!isPrime(p) || !isPrime(q)) {
-    alert("Error: Ambos p y q deben ser números primos.");
+    alert("Ambos p y q deben ser números primos.");
     return;
   }
 
   if (p === q) {
-    alert("Error: p y q deben ser diferentes.");
+    alert("p y q deben ser diferentes.");
     return;
   }
 
   if (p <= 7 || q <= 7) {
-    alert("Error: p y q deben ser mayores que 7.");
+    alert("p y q deben ser mayores que 7.");
     return;
   }
 
