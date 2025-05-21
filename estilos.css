@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: row;      /* ↓ */
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;               /* ↓ */
+    margin: 0;                   /* opcional, para quitar márgenes por defecto */
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.message {
+    height: 20px;
+    width: 98.75%;
+    border-radius: 3px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+    width: 600px;
+    background: linear-gradient(to right, #ffe789, #ffc745);
+}
+
+.container input {
+    margin-bottom: 20px
+}
+
+.primos {
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 75px;
+    height: 20px;
+}
+
+#resultado {
+    margin-top: 3px;
+    width: 98.75%;
+    height: 140px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-style: italic;
+    resize: none;
+}
+
+#resultadoDesencriptar {
+    margin-top: 3px;
+    width: 98.75%;
+    height: 95px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-style: italic;
+    resize: none;
+}
+
+.clavesPublicas {
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 75px;
+    height: 20px;
+}
+
+.clavePrivada {
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 75px;
+    height: 20px;
+}
+
+.boton {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center;    /* Centra los elementos horizontalmente */
+    }
+    
+    .container {
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container input {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .etiqueta::after {
+        content: "\A";         /* \A es el salto de línea en CSS */
+        white-space: pre;      /* permite que \A se convierta en línea nueva */
+        display: block;
+    }
+}

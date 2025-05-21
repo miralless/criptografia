@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+    <title>Criptografía</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Encriptar un mensaje</h3>
+        <input type="text" class="message" id="messageToEncrypt" placeholder="Escribe el mensaje que quieres encriptar">
+        <br>
+        <label for="" class="etiqueta">Introduce dos números primos distintos (mayores que 7):</label><input class="primos" type="text" placeholder="p" id="p" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        inputmode="numeric"><input class="primos" type="text" placeholder="q" id="q" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        inputmode="numeric">
+        <br>
+        <button class="boton" onclick="encriptar()">Encriptar</button>
+        <br>
+        <textarea type="text" id="resultado" disabled></textarea>
+    </div>
+    <div class="container">
+        <h3>Desencriptar un mensaje</h3>
+        <input type="text" class="message" id="messageToDecrypt" placeholder="Escribe el mensaje que quieres desencriptar">
+        <br>
+        <label for="" class="etiqueta">Introduce las claves públicas:</label><input class="clavesPublicas" type="text" placeholder="n" id="n" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        inputmode="numeric"><input class="clavesPublicas" type="text" placeholder="r" id="r" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        inputmode="numeric">
+        <br>
+        <label for="" class="etiqueta">Introduce la clave privada:</label><input class="clavePrivada" type="text" placeholder="s" id="s" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+        inputmode="numeric">
+        <br>
+        <button class="boton" onclick="desencriptar()">Desencriptar</button>
+        <br>
+        <textarea type="text" id="resultadoDesencriptar" disabled></textarea>
+    </div>
+</body>
+</html>
