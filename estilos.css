@@ -83,6 +83,15 @@ h3 {
     cursor: pointer;
 }
 
+.copy-btn {
+        cursor: pointer;
+        padding: 4px;
+        vertical-align: top;
+        margin-top: 5px;
+        float: right;
+        border-radius: 5px;
+    }
+
 @media (max-width: 600px) {
     body {
         flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
@@ -93,6 +102,7 @@ h3 {
         width: 80%;
         margin-top: 10px;
         margin-bottom: 10px;
+        padding-right: 20px;
     }
 
     .container input {
@@ -105,5 +115,14 @@ h3 {
         content: "\A";         /* \A es el salto de línea en CSS */
         white-space: pre;      /* permite que \A se convierta en línea nueva */
         display: block;
+    }
+
+    .copy-btn {
+        cursor: pointer;
+        padding: 4px;
+        vertical-align: top;
+        margin-top: 5px;
+        float: right;
+        border-radius: 5px;
     }
 }

@@ -133,3 +133,20 @@ function desencriptar() {
   const textoPlano = decryptAsciiArray(partes, s, n);
   document.getElementById("resultadoDesencriptar").value = textoPlano;
 }
+
+document.getElementById('copyEncryptedBtn').addEventListener('click', () => {
+  const texto = document.getElementById('resultado').value;
+  if (!texto) return; // no hay nada que copiar
+
+  navigator.clipboard.writeText(texto)
+    .then(() => {
+      // opcional: mostrar mensaje breve
+      const btn = document.getElementById('copyEncryptedBtn');
+      btn.title = 'Copiado ✔';
+      setTimeout(() => btn.title = 'Copiar al portapapeles', 2000);
+    })
+    .catch(err => {
+      console.error('Error copiando al portapapeles:', err);
+      alert('No se pudo copiar.');
+    });
+});
