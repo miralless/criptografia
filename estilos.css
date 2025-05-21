@@ -84,13 +84,13 @@ h3 {
 }
 
 .copy-btn {
-        cursor: pointer;
-        padding: 4px;
-        vertical-align: top;
-        margin-top: 5px;
-        float: right;
-        border-radius: 5px;
-    }
+    cursor: pointer;
+    padding: 4px;
+    vertical-align: top;
+    margin-top: 5px;
+    float: right;
+    border-radius: 3px;
+}
 
 @media (max-width: 600px) {
     body {
@@ -103,6 +103,7 @@ h3 {
         margin-top: 10px;
         margin-bottom: 10px;
         padding-right: 20px;
+        font-size: smaller;
     }
 
     .container input {
@@ -123,6 +124,18 @@ h3 {
         vertical-align: top;
         margin-top: 5px;
         float: right;
-        border-radius: 5px;
+        border-radius: 3px;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+    .resultado {
+        width: 80%;
+    }
+
+    .resultadoDesencriptar {
+        width: 80%;
     }
 }
